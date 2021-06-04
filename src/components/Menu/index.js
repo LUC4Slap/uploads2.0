@@ -34,9 +34,14 @@ export default function Menu() {
           "--bgMenu",
           "rgb(41, 38, 38)"
         );
+        document.documentElement.style.setProperty(
+          "--btnEnviar",
+          "rgb(41, 38, 38)"
+        );
       } else {
         document.documentElement.style.setProperty("--bgfundo", "#fff");
         document.documentElement.style.setProperty("--bgMenu", "#1db954");
+        document.documentElement.style.setProperty("--btnEnviar", "#1db954");
       }
     }
   }, [checked]);

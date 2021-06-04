@@ -42,12 +42,16 @@ export default function Uploads() {
     let label = document.getElementById("labelFile");
     let form = document.getElementById("formUpload");
     let arquivo = document.getElementById("arquivo").files[0];
-    const uploadTask = storage.ref("uploads/" + arquivo.name).put(arquivo);
-    let progresso = document.getElementById("progresso");
-    if (fiscal == "" || fiscal == undefined) {
-      alert("Informe um Analista");
+    if (
+      fiscal == "" ||
+      (fiscal == undefined && arquivo == null) ||
+      arquivo == undefined
+    ) {
+      alert("Arquivo ou Analista estão faltando informar");
       return;
     } else {
+      const uploadTask = storage.ref("uploads/" + arquivo.name).put(arquivo);
+      let progresso = document.getElementById("progresso");
       uploadTask.on(
         "state_changed",
         (snapshot) => {

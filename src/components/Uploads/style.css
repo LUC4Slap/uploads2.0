@@ -34,7 +34,7 @@
   border: none;
   border-radius: 5px;
   color: #fff;
-  background-color: var(--bgInput);
+  background-color: var(--btnEnviar);
   font-size: 18px;
   padding: 10px;
   cursor: pointer;
