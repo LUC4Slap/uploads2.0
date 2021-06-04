@@ -13,6 +13,7 @@
 /build
 
 #database
+/src/database/firebase.js
 /src/database
 
 # misc
