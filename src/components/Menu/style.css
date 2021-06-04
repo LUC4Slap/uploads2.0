@@ -1,0 +1,73 @@
+.menu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  background-color: var(--bgMenu);
+}
+
+.menu h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--colorText);
+  margin-left: 10px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 20px;
+  align-items: center;
+}
+
+.menu ul li a {
+  margin-left: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--colorText);
+  transition: 0.5s ease;
+}
+
+.menu ul li a:hover {
+  padding: 10px;
+  background-color: var(--bgInput);
+  color: var(--colorText) f;
+  border-radius: 5px;
+  transition: 0.5s ease;
+}
+
+.usuario {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  position: fixed;
+  right: 0;
+  top: 15px;
+}
+
+.usuario span {
+  display: flex;
+  color: var(--colorText);
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.usuario span img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.switch {
+  display: flex;
+  align-items: center;
+}
+
+.switch svg {
+  margin-top: 5px;
+  margin-left: 8px;
+  color: var(--colorText);
+}

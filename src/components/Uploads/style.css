@@ -1,0 +1,70 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bgfundo);
+}
+
+.upload {
+  width: 100%;
+  max-width: 500px;
+  margin: 10px auto;
+  background-color: #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.upload input[type="file"] {
+  display: none;
+}
+
+.upload label {
+  display: flex;
+  font-size: 20px;
+  border: 2px dotted #1db954;
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.upload input[type="submit"] {
+  margin-top: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: var(--bgInput);
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.upload progress {
+  width: 100%;
+  height: 25px;
+}
+
+.upload p {
+  margin-top: 10px;
+}
+
+#preview {
+  margin-top: 10px;
+  width: 100%;
+  display: none;
+}
+
+iframe {
+  width: 100%;
+  margin-top: 15px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.selecionar-fiscal select {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
